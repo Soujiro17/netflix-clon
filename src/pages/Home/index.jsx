@@ -1,11 +1,12 @@
 import React from "react";
-import HomeHeader from "../../components/HomeHeader";
+import Enjoy from "../../components/Enjoy";
 import Landing from "../../components/Landing";
 
 const Home = () => {
   return (
     <>
       <Landing />
+      <Enjoy />
     </>
   );
 };

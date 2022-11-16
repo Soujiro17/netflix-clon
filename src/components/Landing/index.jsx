@@ -10,13 +10,14 @@ import {
   SuscribeContainer,
   SuscribeInput,
   SuscribeButton,
+  ContainerWrapper,
 } from "./style";
 
 const Landing = () => {
   return (
     <LandingWrapper>
       <HomeHeader />
-      <HomeSectionLayout>
+      <ContainerWrapper>
         <Container>
           <Title>
             Películas y series ilimitadas <br />y mucho más
@@ -31,7 +32,7 @@ const Landing = () => {
             <SuscribeButton className="primary">Comenzar {">"}</SuscribeButton>
           </SuscribeContainer>
         </Container>
-      </HomeSectionLayout>
+      </ContainerWrapper>
     </LandingWrapper>
   );
 };

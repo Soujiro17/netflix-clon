@@ -15,15 +15,22 @@ export const LandingWrapper = styled.section`
     position: absolute;
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
     content: "";
     z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(
-      0deg,
-      ${colors.black[80]} 0,
-      transparent 60%,
-      ${colors.black[80]}
-    );
+        0deg,
+        transparent 50%,
+        ${colors.black[60]}
+      ),
+      radial-gradient(50% 100%, transparent 0, ${colors.black[60]} 100%);
   }
+`;
+
+export const ContainerWrapper = styled.section`
+  height: 85vh;
 `;
 
 export const Container = styled.div`
@@ -37,14 +44,14 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   color: ${colors.white[100]};
-  font-size: calc(1rem + 3vw);
+  font-size: calc(1rem + 2.6vw);
   text-align: center;
   margin-bottom: 0%;
 `;
 
 export const SubtTitle = styled.h2`
   color: ${colors.white[100]};
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 0.7vw);
   margin-top: 0;
   font-weight: normal;
 `;
@@ -82,4 +89,7 @@ export const SuscribeButton = styled(Button)`
   border: none;
   outline: none;
   border-radius: unset;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: calc(1rem + 0.4vw);
 `;
