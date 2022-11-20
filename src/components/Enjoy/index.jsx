@@ -1,30 +1,21 @@
 import React from "react";
 import images from "../../constants/images";
 import HomeSectionLayout from "../../layouts/HomeSectionLayout";
-import Img from "../../shared/Img";
-import {
-  Container,
-  EnjoyTitle,
-  EnjoyDescription,
-  EnjoyTextWrapper,
-  EnjoyImgWrapper,
-} from "./style";
+import Source from "../../shared/Source";
+import { EnjoyImgWrapper, EnjoyVideo, EnjoyImg } from "./style";
 
 const Enjoy = () => {
   return (
-    <HomeSectionLayout>
-      <Container>
-        <EnjoyTextWrapper>
-          <EnjoyTitle>Disfruta en tu TV</EnjoyTitle>
-          <EnjoyDescription>
-            Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV,
-            reproductores de Blu-ray y más.
-          </EnjoyDescription>
-        </EnjoyTextWrapper>
-        <EnjoyImgWrapper>
-          <Img src={images.home.enjoyImg} alt="tv" width="100%" />
-        </EnjoyImgWrapper>
-      </Container>
+    <HomeSectionLayout
+      title="Disfruta en tu TV"
+      description="Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más."
+    >
+      <EnjoyImgWrapper>
+        <EnjoyImg src={images.home.enjoyImg} alt="tv" />
+        <EnjoyVideo autoPlay>
+          <Source src={images.home.enjoyVideo} type="video/mp4" />
+        </EnjoyVideo>
+      </EnjoyImgWrapper>
     </HomeSectionLayout>
   );
 };

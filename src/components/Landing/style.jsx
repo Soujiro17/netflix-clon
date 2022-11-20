@@ -10,6 +10,7 @@ export const LandingWrapper = styled.section`
   background-image: url(${images.home.landing});
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 1rem;
 
   &::before {
     position: absolute;
